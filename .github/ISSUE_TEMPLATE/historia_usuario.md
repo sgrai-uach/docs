@@ -1,0 +1,73 @@
+name: Historia de Usuario
+description: Plantilla estructurada para ingresar las historias de usuario del proyecto SGRAI.
+title: "[Epic] H# - "
+labels: ["historia de usuario", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "Completa los siguientes campos para registrar una nueva Historia de Usuario del sistema SGRAI."
+      
+  - type: dropdown
+    id: rol
+    attributes:
+      label: Como
+      description: Selecciona el rol del usuario que ejecuta esta accion.
+      options:
+        - Informante
+        - Administrador
+        - Encargado
+        - Patrulla verificadora
+        - Delegado de cuadrilla
+        - Supervisor
+        - Call Center
+    validations:
+      required: true
+      
+  - type: textarea
+    id: accion
+    attributes:
+      label: Quiero
+      description: Describe la funcionalidad especifica a desarrollar.
+      placeholder: "Ej: tener un panel tras reportar un incidente para ver el estado de este mismo."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Para
+      description: Justifica el valor o beneficio que aporta esta funcionalidad.
+      placeholder: "Ej: estar informado de en que etapa va mi reporte."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: criterios_aceptacion
+    attributes:
+      label: Criterios de Aceptacion
+      description: Lista los requisitos exactos que validaran esta historia al cierre del Sprint.
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+      
+  - type: textarea
+    id: tareas_tecnicas
+    attributes:
+      label: Tareas Tecnicas / Subtareas
+      description: (Opcional) Desglosa la historia en los componentes de codigo necesarios.
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: false
+      
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas Adicionales
+      description: (Opcional) Agrega contexto, dependencias, consultas a base de datos o referencias a interfaces.
+    validations:
+      required: false
