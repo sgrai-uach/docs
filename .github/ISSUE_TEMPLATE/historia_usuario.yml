@@ -1,7 +1,7 @@
 name: Historia de Usuario
 description: Plantilla estructurada para ingresar las historias de usuario del proyecto SGRAI.
 title: "[Epic] H# - "
-labels: ["historia de usuario", "enhancement"]
+labels: ["user story", "enhancement"]
 body:
   - type: markdown
     attributes:
